@@ -137,5 +137,22 @@
         "description": ""
       }
     ]
+  },
+  {
+    "folder": "eg8",
+    "title": "Nonexistent Example",
+    "subtitle": "Will not show because display is none on the line below",
+    "display": "none",
+    "description": [
+      "First paragraph of description.",
+      "Second paragraph of description with <b>bold</b> and <i>italic</i> words. ",
+      "Third paragraph of description with some <a href='https://michaelmao.me' rel='noopener'>links that open in this page</a> and <a href='https://michaelmao.me' rel='noopener' target='_blank'>links that open in new page</a>. "
+    ],
+    "images": [
+      {
+        "name": "img.jpg",
+        "description": ""
+      }
+    ]
   }
 ]
