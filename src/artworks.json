@@ -1,0 +1,141 @@
+[
+  {
+    "folder": "eg1",
+    "title": "Example 1",
+    "subtitle": "Subtitle for Example 1",
+    "display": "block",
+    "description": [
+      "First paragraph of description.",
+      "Second paragraph of description with <b>bold</b> and <i>italic</i> words. ",
+      "Third paragraph of description with some <a href='https://michaelmao.me' rel='noopener'>links that open in this page</a> and <a href='https://michaelmao.me' rel='noopener' target='_blank'>links that open in new page</a>. "
+    ],
+    "images": [
+      {
+        "name": "cover.jpg",
+        "description": ""
+      },
+      {
+        "name": "some_image.jpg",
+        "description": "With description. "
+      }
+    ]
+  },
+  {
+    "folder": "eg2",
+    "title": "Example 2",
+    "subtitle": "Subtitle for Example 2",
+    "display": "block",
+    "description": [
+      "First paragraph of description.",
+      "Second paragraph of description with <b>bold</b> and <i>italic</i> words. ",
+      "Third paragraph of description with some <a href='https://michaelmao.me' rel='noopener'>links that open in this page</a> and <a href='https://michaelmao.me' rel='noopener' target='_blank'>links that open in new page</a>. "
+    ],
+    "images": [
+      {
+        "name": "large.jpg",
+        "description": ""
+      },
+      {
+        "name": "detail.jpg",
+        "description": "With description. "
+      }
+    ]
+  },
+  {
+    "folder": "eg3",
+    "title": "Example 3",
+    "subtitle": "Subtitle for Example 3",
+    "display": "block",
+    "description": [
+      "First paragraph of description.",
+      "Second paragraph of description with <b>bold</b> and <i>italic</i> words. ",
+      "Third paragraph of description with some <a href='https://michaelmao.me' rel='noopener'>links that open in this page</a> and <a href='https://michaelmao.me' rel='noopener' target='_blank'>links that open in new page</a>. "
+    ],
+    "images": [
+      {
+        "name": "img1.jpeg",
+        "description": ""
+      },
+      {
+        "name": "img2.jpeg",
+        "description": "With description. "
+      },
+      {
+        "name": "detail.jpg",
+        "description": "With description. "
+      },
+      {
+        "name": "draft.jpg",
+        "description": "With description. "
+      }
+    ]
+  },
+  {
+    "folder": "eg4",
+    "title": "Example 4",
+    "subtitle": "Subtitle for Example 4",
+    "display": "block",
+    "description": [
+      "First paragraph of description.",
+      "Second paragraph of description with <b>bold</b> and <i>italic</i> words. ",
+      "Third paragraph of description with some <a href='https://michaelmao.me' rel='noopener'>links that open in this page</a> and <a href='https://michaelmao.me' rel='noopener' target='_blank'>links that open in new page</a>. "
+    ],
+    "images": [
+      {
+        "name": "img.jpg",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "folder": "eg5",
+    "title": "Example 5",
+    "subtitle": "Subtitle for Example 5",
+    "display": "block",
+    "description": [
+      "First paragraph of description.",
+      "Second paragraph of description with <b>bold</b> and <i>italic</i> words. ",
+      "Third paragraph of description with some <a href='https://michaelmao.me' rel='noopener'>links that open in this page</a> and <a href='https://michaelmao.me' rel='noopener' target='_blank'>links that open in new page</a>. "
+    ],
+    "images": [
+      {
+        "name": "img.jpg",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "folder": "eg6",
+    "title": "Example 6",
+    "subtitle": "Subtitle for Example 6",
+    "display": "block",
+    "description": [
+      "First paragraph of description.",
+      "Second paragraph of description with <b>bold</b> and <i>italic</i> words. ",
+      "Third paragraph of description with some <a href='https://michaelmao.me' rel='noopener'>links that open in this page</a> and <a href='https://michaelmao.me' rel='noopener' target='_blank'>links that open in new page</a>. "
+    ],
+    "images": [
+      {
+        "name": "img.jpg",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "folder": "eg7",
+    "title": "Example 7",
+    "subtitle": "Subtitle for Example 7",
+    "display": "block",
+    "description": [
+      "First paragraph of description.",
+      "Second paragraph of description with <b>bold</b> and <i>italic</i> words. ",
+      "Third paragraph of description with some <a href='https://michaelmao.me' rel='noopener'>links that open in this page</a> and <a href='https://michaelmao.me' rel='noopener' target='_blank'>links that open in new page</a>. "
+    ],
+    "images": [
+      {
+        "name": "img.jpg",
+        "description": ""
+      }
+    ]
+  }
+]
