@@ -1,12 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 
+// colors
+$bg: #fffffb;
+$dark: #002366;
+$gray: #363838;
+$accent: #d67b43;
+$accent2: hsl(219, 100%, 60%);
+
+$top-bar-height: 80px;
+
 // Default
 * {
-    margin: 0 !important;
+  // margin: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-// colors
-$bg: #6ba2e5;
-$dark: #221C35;
-$gray: #363838;
-$accent: #DBBD4E
+html, body {
+  font-family: 'Noto Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $dark;
+  background-color: $bg;
+  margin: 0;
+}
+
+h3 {
+  color: $gray;
+}
+
+h1 {
+  color: $dark;
+}
+
+p {
+  color: $gray;
+}
+
+a {
+  text-decoration: none;
+  color: $accent;
+}
+
+ul {
+  list-style: none;
+}

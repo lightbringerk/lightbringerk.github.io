@@ -1,45 +1,62 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <TopBar :isMobile="isMobile"/>
+    <PageView :isMobile="isMobile"/>
   </div>
 </template>
 
+<script lang="ts">
+import { Component, Vue, Prop, Watch } from 'vue-property-decorator';
+import TopBar from '@/components/TopBar.vue';
+import PageView from '@/components/PageView.vue';
+
+@Component({
+  components: {
+    TopBar,
+    PageView,
+  },
+})
+
+export default class App extends Vue {
+  private viewWidth = window.innerWidth;
+  private get isMobile() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i
+      .test(navigator.userAgent) || this.viewWidth < 900) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  @Watch('viewWidth')
+  @Watch('isMobile')
+
+  private updateWidth() {
+    this.viewWidth = window.innerWidth;
+  }
+
+  private mounted() {
+    window.addEventListener('resize', this.updateWidth);
+  }
+}
+</script>
+
 <style lang="scss">
-
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
-  background-color: #f4f3f1;
+.page-view {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding-top: $top-bar-height;
 }
 
-.blue {
-  color: #221C35;
+.content {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
-/* .black {
-  color: #363838;
-} */
-
-#nav {
-  padding: 30px;
-  /* color: rgb(255, 0, 0); */
-}
-
-#nav a {
-  padding: 10px;
-  font-weight: bold;
-  color: #221C35;
-}
-
-#nav a.router-link-exact-active {
-  color: #dbbd4e;
+.mobile {
+  margin-top: 10%;
+  width: 80%;
 }
 </style>
