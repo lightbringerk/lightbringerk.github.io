@@ -8,5 +8,9 @@ export default class NotFound extends Vue {}
 </script>
 
 <style lang="scss" scoped>
-
+h1 {
+  font-size: 60px;
+  text-align: center;
+  line-height: 20vh;
+}
 </style>
