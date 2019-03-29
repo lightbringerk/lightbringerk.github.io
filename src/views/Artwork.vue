@@ -5,9 +5,7 @@
       <p v-for="(description, index) in data.description" v-bind:key="index" v-html="description"></p>
     </div>
     <div class="right" v-bind:class="{ mobileContent: isMobile }">
-      <!-- <img v-for="(img, index) in data.images" v-bind:key="index" :src="path + img.name"> -->
       <Pic v-for="(img, index) in data.images" v-bind:key="index" :imagePath="path + img.name" :description="img.description" :isMobile="isMobile"/>
-      <!-- <Pic imagePath="/artworks/eg1/cover.jpg" description="abcdawef"/> -->
     </div>
     <div style="clear: both;"></div>
   </div>

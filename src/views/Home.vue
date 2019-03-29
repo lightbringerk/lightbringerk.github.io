@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img src="/splash.jpg">
+    <img src="/splash.jpg" alt="Splash image">
   </div>
 </template>
 

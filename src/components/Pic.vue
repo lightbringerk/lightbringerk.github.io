@@ -1,7 +1,7 @@
 <template>
   <div class="pic">
     <div class="box">
-      <img :src="imagePath">
+      <img :src="imagePath" :alt="description">
     </div>
     <div class="text">
       <p v-html="description" v-if="description != ''"></p>

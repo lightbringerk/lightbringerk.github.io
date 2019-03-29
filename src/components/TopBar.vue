@@ -89,7 +89,7 @@ $logo-size: 60px;
   float: right;
   line-height: $top-bar-height;
   height: $top-bar-height;
-  width: calc(70% - 20px);
+  width: calc(40% - 20px);
 }
 
 .nav a {
@@ -168,7 +168,7 @@ $logo-size: 60px;
 
 .logo {
   float: left;
-  width: 30%;
+  width: 60%;
 }
 
 .logo img {
