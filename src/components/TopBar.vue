@@ -181,6 +181,7 @@ $logo-size: 60px;
   margin: 0;
   float: left;
   font-size: 40px;
+  font-weight: 10;
   margin-left: calc((#{$top-bar-height} - #{$logo-size}) / 2);
   line-height: $top-bar-height;
   height: $top-bar-height;
