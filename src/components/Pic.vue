@@ -25,7 +25,7 @@ export default class Pic extends Vue {
 <style lang="scss" scoped>
 .pic {
   display: block;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
   // width: 400px;
   margin: 20px;
 }
@@ -49,7 +49,7 @@ export default class Pic extends Vue {
 
 .text p {
   height: 30px;
-  margin-left: 10%;
   line-height: 100%;
+  margin-left: 3%;
 }
 </style>

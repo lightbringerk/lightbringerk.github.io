@@ -1,15 +1,21 @@
 <template>
   <div class="topbar" v-bind:class="{ 'mobile-topbar': isMobile }">
     <div v-if="!isMobile" class="nav" @touchmove="prevent">
-      <router-link to="/">HOME</router-link>
       <router-link to="/about">ABOUT</router-link>
+      <router-link to="/artworks">WORKS</router-link>
+      <router-link to="/">HOME</router-link>
     </div>
     <div v-if="isMobile" class="nav" @touchmove="prevent">
-      <img src="@/assets/logo.png" alt="navigation menu" v-on:click="toggleMenu">
+      <div class="menu-icon" v-on:click="toggleMenu">
+        <div class="menu-div"/>
+        <div class="menu-div"/>
+        <div class="menu-div"/>
+      </div>
     </div>
-    <div v-if="isMobile" class="mobile-nav" nums="2" @touchmove="prevent">
+    <div v-if="isMobile" class="mobile-nav" nums="3" @touchmove="prevent">
       <ul>
         <router-link to="/" tag="li" @click.native="toggleMenu">HOME</router-link>
+        <router-link to="/artworks" tag="li" @click.native="toggleMenu">WORKS</router-link>
         <router-link to="/about" tag="li" @click.native="toggleMenu">ABOUT</router-link>
       </ul>
     </div>
@@ -40,7 +46,7 @@ export default class TopBar extends Vue {
       const menu = document.getElementsByClassName('mobile-nav')[0] as HTMLElement;
       const topbar = document.getElementsByClassName('topbar')[0] as HTMLElement;
       menu.style.height = '0';
-      topbar.style.boxShadow = '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)';
+      // topbar.style.boxShadow = '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)';
       this.menuOpen = false;
     } else {
       const menu = document.getElementsByClassName('mobile-nav')[0] as HTMLElement;
@@ -70,7 +76,7 @@ $logo-size: 60px;
   width: 80%;
   height: $top-bar-height;
   background-color: $bg;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 999;
 }
 
@@ -80,17 +86,18 @@ $logo-size: 60px;
 }
 
 .nav {
-  float: left;
+  float: right;
   line-height: $top-bar-height;
   height: $top-bar-height;
   width: calc(70% - 20px);
 }
 
 .nav a {
+  float: right;
   margin: 0 12px;
   font-size: 16px;
   font-weight: bold;
-  color: $dark;
+  color: $gray;
 }
 
 .nav a:hover {
@@ -108,9 +115,23 @@ $logo-size: 60px;
 }
 
 .nav img {
+  float: right;
   transform: rotate(180deg);
   height: $nav-size; 
   margin-top: calc((#{$top-bar-height} - #{$nav-size}) / 2);
+}
+
+.menu-icon {
+  float: right;
+  margin-top: calc((#{$top-bar-height} - #{$nav-size}) / 2 + 3px);
+}
+
+.menu-div {
+  width: $nav-size;
+  height: calc(#{$nav-size} / 5 - 2px);
+  background-color: $gray;
+  margin-bottom: calc(#{$nav-size} / 5);
+  border-radius: 5px;
 }
 
 .mobile-nav {
@@ -138,7 +159,7 @@ $logo-size: 60px;
   font-size: 16px;
   line-height: 50px;
   font-weight: bold;
-  color: $dark;
+  color: $gray;
 }
 
 .mobile-nav li.router-link-exact-active {
@@ -146,21 +167,21 @@ $logo-size: 60px;
 }
 
 .logo {
-  float: right;
+  float: left;
   width: 30%;
 }
 
 .logo img{
-  float: right;
+  float: left;
   height: $logo-size;
   margin: calc((#{$top-bar-height} - #{$logo-size}) / 2) 0;
 }
 
 .logo h6{
   margin: 0;
-  float: right;
+  float: left;
   font-size: 16px;
-  margin-right: calc((#{$top-bar-height} - #{$logo-size}) / 2);
+  margin-left: calc((#{$top-bar-height} - #{$logo-size}) / 2);
   line-height: $top-bar-height;
   height: $top-bar-height;
 }

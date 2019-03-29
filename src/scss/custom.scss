@@ -2,10 +2,8 @@
 
 // colors
 $bg: #fffffb;
-$dark: #002366;
 $gray: #363838;
 $accent: #d67b43;
-$accent2: hsl(219, 100%, 60%);
 
 $top-bar-height: 80px;
 
@@ -20,7 +18,7 @@ html, body {
   font-family: 'Noto Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: $dark;
+  color: $gray;
   background-color: $bg;
   margin: 0;
 }
@@ -30,7 +28,7 @@ h3 {
 }
 
 h1 {
-  color: $dark;
+  color: $gray;
 }
 
 p {

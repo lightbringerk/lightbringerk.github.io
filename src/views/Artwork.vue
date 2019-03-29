@@ -1,8 +1,7 @@
-<template :src="path">
+<template>
   <div class="artwork">
     <div class="left" v-bind:class="{ mobileContent: isMobile }">
       <h1>{{ data.title }}</h1>
-      <h3>{{ data.subtitle }}</h3>
       <p v-for="(description, index) in data.description" v-bind:key="index" v-html="description"></p>
     </div>
     <div class="right" v-bind:class="{ mobileContent: isMobile }">
@@ -22,7 +21,6 @@ import artworks from '@/artworks.json';
 const mt: ArtData = {
   folder: '*mt*',
   title: '',
-  subtitle: '',
   display: 'block',
   description: [''],
   images: [{
@@ -100,5 +98,6 @@ export default class Artwork extends Vue {
   position: static;
   float: none;
   width: 100%;
+  text-align: justify;
 }
 </style>

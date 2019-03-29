@@ -58,5 +58,6 @@ export default class App extends Vue {
 .mobile {
   margin-top: 10%;
   width: 80%;
+  // text-align: justify;
 }
 </style>

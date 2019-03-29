@@ -4,8 +4,8 @@
       <img :src="coverPath" :alt="data.title">
     </div>
     <div class="text">
-      <h1>{{ data.title }}</h1>
-      <h3>{{ data.subtitle }}</h3>
+      <h4>{{ data.title }}</h4>
+      <!-- <h3>{{ data.subtitle }}</h3> -->
     </div>
   </router-link>
 </template>
@@ -28,8 +28,11 @@ export default class Cover extends Vue {
 .cover {
   cursor: pointer;
   display: block;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
-  width: 400px;
+  // border-style: solid;
+  // border-width: 1px;
+  // color: rgba(0, 0, 0, 0.3);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+  width: 300px;
   margin: 10px;
 }
 
@@ -57,15 +60,11 @@ export default class Cover extends Vue {
 
 .text {
   position: relative;
+  text-align: center;
 }
 
-.text h1 {
-  margin-left: 10%;
-  line-height: 100%;
-}
-
-.text h3 {
-  margin-left: 10%;
+.text h4 {
+  // margin-left: 10%;
   line-height: 100%;
 }
 
