@@ -21,7 +21,7 @@
     </div>
     <div class="logo">
       <img src="@/assets/logo.png" alt="Katrina Wang Logo" @touchmove="prevent">
-      <h6 v-if="!isMobile">KATRINA WANG</h6>
+      <h6><router-link to="/" tag="a" v-if="!isMobile">KATRINA WANG</router-link></h6>
     </div>
     <div style="clear: both;"></div>
   </div>
@@ -171,18 +171,27 @@ $logo-size: 60px;
   width: 30%;
 }
 
-.logo img{
+.logo img {
   float: left;
   height: $logo-size;
   margin: calc((#{$top-bar-height} - #{$logo-size}) / 2) 0;
 }
 
-.logo h6{
+.logo h6 {
   margin: 0;
   float: left;
-  font-size: 16px;
+  font-size: 40px;
   margin-left: calc((#{$top-bar-height} - #{$logo-size}) / 2);
   line-height: $top-bar-height;
   height: $top-bar-height;
+}
+
+.logo a:hover {
+  color: $accent;
+  transition: 0.5s;
+}
+
+.logo a {
+  color: $gray;
 }
 </style>
