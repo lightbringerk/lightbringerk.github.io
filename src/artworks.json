@@ -2,7 +2,6 @@
   {
     "folder": "eg1",
     "title": "Example 1",
-    "subtitle": "Subtitle for Example 1",
     "display": "block",
     "description": [
       "First paragraph of description.",
@@ -23,7 +22,6 @@
   {
     "folder": "eg2",
     "title": "Example 2",
-    "subtitle": "Subtitle for Example 2",
     "display": "block",
     "description": [
       "First paragraph of description.",
@@ -44,7 +42,6 @@
   {
     "folder": "eg3",
     "title": "Example 3",
-    "subtitle": "Subtitle for Example 3",
     "display": "block",
     "description": [
       "First paragraph of description.",
@@ -73,7 +70,6 @@
   {
     "folder": "eg4",
     "title": "Example 4",
-    "subtitle": "Subtitle for Example 4",
     "display": "block",
     "description": [
       "First paragraph of description.",
@@ -90,7 +86,6 @@
   {
     "folder": "eg5",
     "title": "Example 5",
-    "subtitle": "Subtitle for Example 5",
     "display": "block",
     "description": [
       "First paragraph of description.",
@@ -107,7 +102,6 @@
   {
     "folder": "eg6",
     "title": "Example 6",
-    "subtitle": "Subtitle for Example 6",
     "display": "block",
     "description": [
       "First paragraph of description.",
@@ -124,7 +118,6 @@
   {
     "folder": "eg7",
     "title": "Example 7",
-    "subtitle": "Subtitle for Example 7",
     "display": "block",
     "description": [
       "First paragraph of description.",
@@ -140,8 +133,7 @@
   },
   {
     "folder": "eg8",
-    "title": "Nonexistent Example",
-    "subtitle": "Will not show because display is none on the line below",
+    "title": "A Template",
     "display": "none",
     "description": [
       "First paragraph of description.",
